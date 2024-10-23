@@ -1,17 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Row 0: First Name: Saksham, Last Name: Gupta, Email: saksham@gmail.com, Gender: Male, Mobile: 9720031702, DOB: 09-12-2002, Subjects: English, Hobbies: Reading, Sports, Picture Path: image1.jpg, Address: 101 Street, State: Haryana, City: Panipat]]>
+    </line>
+    <line>
+      <![CDATA[Row 1: First Name: Yaju, Last Name: Shukla, Email: yaju@gmail.com, Gender: Male, Mobile: 9720031702, DOB: 09-12-2002, Subjects: Computer Science, Hobbies: Sports, Music, Picture Path: image2.jpg, Address: 123 Street, State: Rajasthan, City: Jaipur]]>
+    </line>
+    <line>
+      <![CDATA[Row 2: First Name: Sumedh, Last Name: Dongre, Email: sumedh@gmail.com, Gender: Male, Mobile: 9720031700, DOB: 18-05-2003, Subjects: Commerce, Hobbies: Reading, Picture Path: image3.jpg, Address: 456 Avenue, State: Haryana, City: Karnal]]>
+    </line>
+    <line>
+      <![CDATA[Row 3: First Name: Sanika, Last Name: Upasani, Email: sanika@gmail.com, Gender: Female, Mobile: 9720031702, DOB: 30-12-2003, Subjects: English, Hobbies: Reading, Sports, Picture Path: image4.jpg, Address: 101 Street, State: Haryana, City: Panipat]]>
+    </line>
+    <line>
+      <![CDATA[Writing results for: Saksham Gupta]]>
+    </line>
+    <line>
+      <![CDATA[Result written for: Saksham Gupta]]>
+    </line>
+    <line>
+      <![CDATA[Writing results for: Yaju Shukla]]>
+    </line>
+    <line>
+      <![CDATA[Result written for: Yaju Shukla]]>
+    </line>
+    <line>
+      <![CDATA[Writing results for: Sumedh Dongre]]>
+    </line>
+    <line>
+      <![CDATA[Result written for: Sumedh Dongre]]>
+    </line>
+    <line>
+      <![CDATA[Writing results for: Sanika Upasani]]>
+    </line>
+    <line>
+      <![CDATA[Result written for: Sanika Upasani]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-10-23T03:18:26 IST" name="Default suite" finished-at="2024-10-23T03:18:50 IST" duration-ms="23446">
+  <suite started-at="2024-10-24T02:06:04 IST" name="Default suite" finished-at="2024-10-24T02:06:18 IST" duration-ms="14223">
     <groups>
     </groups>
-    <test started-at="2024-10-23T03:18:26 IST" name="Default test" finished-at="2024-10-23T03:18:50 IST" duration-ms="23446">
+    <test started-at="2024-10-24T02:06:04 IST" name="Default test" finished-at="2024-10-24T02:06:18 IST" duration-ms="14223">
       <class name="TestCases.RegisterTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.RegisterTest@6f8e8894]" started-at="2024-10-23T03:18:26 IST" name="setup" finished-at="2024-10-23T03:18:40 IST" duration-ms="14081" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.RegisterTest@dc9876b]" started-at="2024-10-24T02:06:04 IST" name="setup" finished-at="2024-10-24T02:06:11 IST" duration-ms="7121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.RegisterTest@6f8e8894]" started-at="2024-10-23T03:18:40 IST" name="registerTest" data-provider="registerData" finished-at="2024-10-23T03:18:43 IST" duration-ms="2365" status="PASS">
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.RegisterTest@dc9876b]" started-at="2024-10-24T02:06:11 IST" name="registerTest" data-provider="registerData" finished-at="2024-10-24T02:06:13 IST" duration-ms="1981" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,9 +111,15 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Writing results for: Saksham Gupta]]>
+            </line>
+            <line>
+              <![CDATA[Result written for: Saksham Gupta]]>
+            </line>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.RegisterTest@6f8e8894]" started-at="2024-10-23T03:18:43 IST" name="registerTest" data-provider="registerData" finished-at="2024-10-23T03:18:45 IST" duration-ms="2002" status="PASS">
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.RegisterTest@dc9876b]" started-at="2024-10-24T02:06:13 IST" name="registerTest" data-provider="registerData" finished-at="2024-10-24T02:06:15 IST" duration-ms="1664" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,7 +163,7 @@
             </param>
             <param index="8">
               <value>
-                <![CDATA[image1.jpg]]>
+                <![CDATA[image2.jpg]]>
               </value>
             </param>
             <param index="9">
@@ -141,9 +183,15 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Writing results for: Yaju Shukla]]>
+            </line>
+            <line>
+              <![CDATA[Result written for: Yaju Shukla]]>
+            </line>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.RegisterTest@6f8e8894]" started-at="2024-10-23T03:18:45 IST" name="registerTest" data-provider="registerData" finished-at="2024-10-23T03:18:47 IST" duration-ms="1934" status="PASS">
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.RegisterTest@dc9876b]" started-at="2024-10-24T02:06:15 IST" name="registerTest" data-provider="registerData" finished-at="2024-10-24T02:06:16 IST" duration-ms="1666" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -187,7 +235,7 @@
             </param>
             <param index="8">
               <value>
-                <![CDATA[image1.jpg]]>
+                <![CDATA[image3.jpg]]>
               </value>
             </param>
             <param index="9">
@@ -207,9 +255,15 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Writing results for: Sumedh Dongre]]>
+            </line>
+            <line>
+              <![CDATA[Result written for: Sumedh Dongre]]>
+            </line>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.RegisterTest@6f8e8894]" started-at="2024-10-23T03:18:47 IST" name="registerTest" data-provider="registerData" finished-at="2024-10-23T03:18:49 IST" duration-ms="1979" status="PASS">
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.RegisterTest@dc9876b]" started-at="2024-10-24T02:06:16 IST" name="registerTest" data-provider="registerData" finished-at="2024-10-24T02:06:18 IST" duration-ms="1610" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -228,7 +282,7 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Male]]>
+                <![CDATA[Female]]>
               </value>
             </param>
             <param index="4">
@@ -253,7 +307,7 @@
             </param>
             <param index="8">
               <value>
-                <![CDATA[image1.jpg]]>
+                <![CDATA[image4.jpg]]>
               </value>
             </param>
             <param index="9">
@@ -273,75 +327,15 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Writing results for: Sanika Upasani]]>
+            </line>
+            <line>
+              <![CDATA[Result written for: Sanika Upasani]]>
+            </line>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.RegisterTest@6f8e8894]" started-at="2024-10-23T03:18:49 IST" name="registerTest" data-provider="registerData" finished-at="2024-10-23T03:18:50 IST" duration-ms="891" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.RegisterTest@6f8e8894]" started-at="2024-10-23T03:18:50 IST" name="tearDown" finished-at="2024-10-23T03:18:50 IST" duration-ms="300" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.RegisterTest@dc9876b]" started-at="2024-10-24T02:06:18 IST" name="tearDown" finished-at="2024-10-24T02:06:18 IST" duration-ms="309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

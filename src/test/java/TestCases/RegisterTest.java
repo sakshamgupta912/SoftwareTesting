@@ -1,4 +1,8 @@
 package TestCases;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import org.testng.Reporter;
 
 import PageObjects.RegisterPage;
 
@@ -27,6 +31,8 @@ import io.qameta.allure.Step;
 @Epic("Student Registration Automation")
 @Feature("Data-Driven Testing")
 public class RegisterTest {
+	private static final Logger logger = Logger.getLogger(RegisterTest.class.getName());
+	
     WebDriver driver;
     RegisterPage registerPage;
     XSSFWorkbook outputWorkbook;
@@ -113,7 +119,7 @@ public class RegisterTest {
     private void writeTestResult(String firstName, String lastName, String email, String gender, String mobile,
             String dob, String subjects, String hobbies, String picturePath, String address,
             String state, String city, String result) {
-        System.out.println("Writing results for: " + firstName + " " + lastName);
+        Reporter.log("Writing results for: " + firstName + " " + lastName);
         XSSFRow row = outputWorkbook.getSheetAt(0).createRow(currentRow++);
         row.createCell(0).setCellValue(firstName);
         row.createCell(1).setCellValue(lastName);
@@ -128,7 +134,7 @@ public class RegisterTest {
         row.createCell(10).setCellValue(state);
         row.createCell(11).setCellValue(city);
         row.createCell(12).setCellValue(result); // Write the result
-        System.out.println("Result written for: " + firstName + " " + lastName);
+        Reporter.log("Result written for: " + firstName + " " + lastName);
 }
 
 
@@ -137,55 +143,55 @@ public class RegisterTest {
     public Object[][] getData() throws Exception {
         int rowCount = ExcelUtil.getRowCount(0);  // Get number of rows in the first sheet
         Object[][] data = new Object[rowCount][12];  // Assuming 12 columns in the Excel file
-        System.out.println(rowCount);
+     
         // Loop through Excel rows to populate the data array
         for (int i = 0; i < rowCount; i++) {
             // Retrieve data from the Excel sheet
             // Retrieve data from the Excel sheet
 			/*
 			 * String firstName = ExcelUtil.getCellData(0, i, 0); // First Name (column 0)
-			 * System.out.println("Row " + i + " - First Name: " + firstName);
+			 * Reporter.log("Row " + i + " - First Name: " + firstName);
 			 * 
 			 * String lastName = ExcelUtil.getCellData(0, i, 1); // Last Name (column 1)
-			 * System.out.println("Row " + i + " - Last Name: " + lastName);
+			 * Reporter.log("Row " + i + " - Last Name: " + lastName);
 			 * 
 			 * String email = ExcelUtil.getCellData(0, i, 2); // Email (column 2)
-			 * System.out.println("Row " + i + " - Email: " + email);
+			 * Reporter.log("Row " + i + " - Email: " + email);
 			 * 
 			 * String gender = ExcelUtil.getCellData(0, i, 3); // Gender (column 3)
-			 * System.out.println("Row " + i + " - Gender: " + gender);
+			 * Reporter.log("Row " + i + " - Gender: " + gender);
 			 * 
 			 * String mobileNumber = ExcelUtil.getCellData(0, i, 4); // Mobile Number
-			 * (column 4) System.out.println("Row " + i + " - Mobile Number: " +
+			 * (column 4) Reporter.log("Row " + i + " - Mobile Number: " +
 			 * mobileNumber);
 			 * 
 			 * String dateOfBirth = ExcelUtil.getCellData(0, i, 5); // Date of Birth (column
-			 * 5) System.out.println("Row " + i + " - Date of Birth: " + dateOfBirth);
+			 * 5) Reporter.log("Row " + i + " - Date of Birth: " + dateOfBirth);
 			 * 
 			 * String subjects = ExcelUtil.getCellData(0, i, 6); // Subjects (column 6)
-			 * System.out.println("Row " + i + " - Subjects: " + subjects);
+			 * Reporter.log("Row " + i + " - Subjects: " + subjects);
 			 * 
 			 * String hobbies = ExcelUtil.getCellData(0, i, 7); // Hobbies (column 7)
-			 * System.out.println("Row " + i + " - Hobbies: " + hobbies);
+			 * Reporter.log("Row " + i + " - Hobbies: " + hobbies);
 			 * 
 			 * String picturePath = ExcelUtil.getCellData(0, i, 8); // Picture Path (column
-			 * 8) System.out.println("Row " + i + " - Picture Path: " + picturePath);
+			 * 8) Reporter.log("Row " + i + " - Picture Path: " + picturePath);
 			 * 
 			 * String currentAddress = ExcelUtil.getCellData(0, i, 9); // Current Address
-			 * (column 9) System.out.println("Row " + i + " - Current Address: " +
+			 * (column 9) Reporter.log("Row " + i + " - Current Address: " +
 			 * currentAddress);
 			 * 
 			 * String state = ExcelUtil.getCellData(0, i, 10); // State (column 10)
-			 * System.out.println("Row " + i + " - State: " + state);
+			 * Reporter.log("Row " + i + " - State: " + state);
 			 * 
 			 * String city = ExcelUtil.getCellData(0, i, 11); // City (column 11)
-			 * System.out.println("Row " + i + " - City: " + city);
+			 * Reporter.log("Row " + i + " - City: " + city);
 			 * 
 			 * // Check if any critical data is null and skip if true if (firstName == null
 			 * || lastName == null || email == null || gender == null || mobileNumber ==
 			 * null || dateOfBirth == null || subjects == null || hobbies == null ||
 			 * picturePath == null || currentAddress == null || state == null || city ==
-			 * null) { System.out.println("Skipping row " + i + " due to null values.");
+			 * null) { Reporter.log("Skipping row " + i + " due to null values.");
 			 * continue; // Skip this iteration }
 			 */
             
@@ -203,7 +209,7 @@ public class RegisterTest {
             data[i][11] = ExcelUtil.getCellData(0, i, 11); // City (column 11)
             
          // Debugging output to track what data is being read
-            System.out.println("Row " + i + ": " +
+            Reporter.log("Row " + i + ": " +
                 "First Name: " + data[i][0] + ", " +
                 "Last Name: " + data[i][1] + ", " +
                 "Email: " + data[i][2] + ", " +
